@@ -22,9 +22,6 @@ function App() {
       <TodoList 
         todos={todos}
       />
-      <Todo 
-        todos={todos}
-      />
     </div>
   );
 }
