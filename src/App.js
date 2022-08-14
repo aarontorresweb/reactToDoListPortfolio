@@ -3,7 +3,7 @@ import "./App.css";
 // Component Imports
 import Form from './components/Form';
 import TodoList from './components/TodoList';
-import Todo from './components/Todo';
+// import Todo from './components/Todo';
 
 function App() {
   const [ inputText, setInputText] = useState('');
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="todo-app">
       <header>
-        <h1>Aaron's Todo App</h1> 
+        <h1>Basic Todo App :)</h1> 
       </header>
       <Form
         inputText={inputText} 
@@ -20,6 +20,7 @@ function App() {
         setInputText={setInputText} 
       />
       <TodoList 
+        setTodos={setTodos}
         todos={todos}
       />
     </div>
