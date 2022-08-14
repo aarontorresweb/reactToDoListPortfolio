@@ -6,8 +6,12 @@ const Todo = ({ text, todo, todos, setTodos }) => {
     const deleteHandler = () => {
         console.log(todo);
         console.log(todo.id);
-        // setTodos(todos.filter((el) => el.id !== todos.id));
+        setTodos(todos.filter((el) => el.id !== todos.id));
         // setTodos.remove(todos.id);
+
+        // const array=this.state.todos;
+        // console.log(`Array: ${array}`)
+
     };
 
     const completeHandler = () => {
