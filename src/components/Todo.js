@@ -4,11 +4,11 @@ const Todo = ({ text, todo, todos, setTodos }) => {
     // Event Handlers
     // Do I need to put an ID as a parameter for deleteHandler?
     const deleteHandler = () => {
-        // console.log(todo);
-        // console.log(todo.id);
+        console.log(todo);
+        console.log(todo.id);
 
-        // setTodos(todo.filter((el) => el.id !== todo.id));
-        // setTodos.remove(todos.id);
+        setTodos(todo.filter((el) => el.id !== todo.id));
+        setTodos.remove(todos.id);
 
         // const array=this.state.todos;
         // console.log(`Array: ${array}`)
